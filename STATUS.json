@@ -1,5 +1,280 @@
 {
   "stage": "WARMUP",
+  "last_capture": 1792229305015,
+  "last_tick": 1792229307568,
+  "last_raw": "raw/1792229305012-candles-58052370.json.gz",
+  "integrity_halt": false,
+  "coverage": [
+    {
+      "symbol": "AAVEUSDT",
+      "bars": 44729,
+      "last": 1792229100000,
+      "close_age_seconds": 147.861
+    },
+    {
+      "symbol": "ADAUSDT",
+      "bars": 44729,
+      "last": 1792229100000,
+      "close_age_seconds": 147.863
+    },
+    {
+      "symbol": "ALGOUSDT",
+      "bars": 44729,
+      "last": 1792229100000,
+      "close_age_seconds": 147.864
+    },
+    {
+      "symbol": "APTUSDT",
+      "bars": 44729,
+      "last": 1792229100000,
+      "close_age_seconds": 147.866
+    },
+    {
+      "symbol": "ARBUSDT",
+      "bars": 44729,
+      "last": 1792229100000,
+      "close_age_seconds": 147.868
+    },
+    {
+      "symbol": "ASTERUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.87
+    },
+    {
+      "symbol": "AVAXUSDT",
+      "bars": 44729,
+      "last": 1792229100000,
+      "close_age_seconds": 147.872
+    },
+    {
+      "symbol": "BCHUSDT",
+      "bars": 44729,
+      "last": 1792229100000,
+      "close_age_seconds": 147.873
+    },
+    {
+      "symbol": "BNBUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.875
+    },
+    {
+      "symbol": "BTCUSDT",
+      "bars": 44729,
+      "last": 1792229100000,
+      "close_age_seconds": 147.877
+    },
+    {
+      "symbol": "DOGEUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.879
+    },
+    {
+      "symbol": "DOTUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.88
+    },
+    {
+      "symbol": "ENAUSDT",
+      "bars": 44729,
+      "last": 1792229100000,
+      "close_age_seconds": 147.882
+    },
+    {
+      "symbol": "ETHUSDT",
+      "bars": 44729,
+      "last": 1792229100000,
+      "close_age_seconds": 147.884
+    },
+    {
+      "symbol": "FETUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.886
+    },
+    {
+      "symbol": "FILUSDT",
+      "bars": 44729,
+      "last": 1792229100000,
+      "close_age_seconds": 147.887
+    },
+    {
+      "symbol": "HBARUSDT",
+      "bars": 44729,
+      "last": 1792229100000,
+      "close_age_seconds": 147.889
+    },
+    {
+      "symbol": "HYPEUSDT",
+      "bars": 33027,
+      "last": 1792229160000,
+      "close_age_seconds": 87.89
+    },
+    {
+      "symbol": "INJUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.892
+    },
+    {
+      "symbol": "JUPUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.894
+    },
+    {
+      "symbol": "LINKUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.896
+    },
+    {
+      "symbol": "LTCUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.898
+    },
+    {
+      "symbol": "METUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.899
+    },
+    {
+      "symbol": "NEARUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.901
+    },
+    {
+      "symbol": "OGNUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.903
+    },
+    {
+      "symbol": "ONDOUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.905
+    },
+    {
+      "symbol": "PEPEUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.906
+    },
+    {
+      "symbol": "PUMPUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.908
+    },
+    {
+      "symbol": "QNTUSDT",
+      "bars": 44729,
+      "last": 1792229100000,
+      "close_age_seconds": 147.91
+    },
+    {
+      "symbol": "RLCUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.912
+    },
+    {
+      "symbol": "SANDUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.913
+    },
+    {
+      "symbol": "SOLUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.915
+    },
+    {
+      "symbol": "STRKUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.917
+    },
+    {
+      "symbol": "SUIUSDT",
+      "bars": 44729,
+      "last": 1792229100000,
+      "close_age_seconds": 147.919
+    },
+    {
+      "symbol": "TAOUSDT",
+      "bars": 44729,
+      "last": 1792229100000,
+      "close_age_seconds": 147.921
+    },
+    {
+      "symbol": "TIAUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.922
+    },
+    {
+      "symbol": "TRXUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.924
+    },
+    {
+      "symbol": "UNIUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.926
+    },
+    {
+      "symbol": "WLDUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.928
+    },
+    {
+      "symbol": "WUSDT",
+      "bars": 44729,
+      "last": 1792229100000,
+      "close_age_seconds": 147.929
+    },
+    {
+      "symbol": "XLMUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.931
+    },
+    {
+      "symbol": "XRPUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.933
+    },
+    {
+      "symbol": "ZECUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.935
+    },
+    {
+      "symbol": "ZROUSDT",
+      "bars": 44730,
+      "last": 1792229160000,
+      "close_age_seconds": 87.936
+    }
+  ],
+  "pending": 60,
+  "accounts": 81,
+  "positions": 0,
+  "issues": [],
+  "performance_evaluation": "DEFERRED_TO_FIXED_END",
   "window": {
     "schema": "settled-spot-comparison-v1",
     "frozen": 1792228978123,
@@ -154,8 +429,5 @@
       "B3-C_A2"
     ],
     "not_independent_replication_of_old_windows": true
-  },
-  "accounts": 81,
-  "positions": 0,
-  "performance_evaluation": "DEFERRED_TO_FIXED_END"
+  }
 }
