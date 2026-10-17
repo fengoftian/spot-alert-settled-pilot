@@ -1,0 +1,31 @@
+{
+  "seed_sha256": "da9d74ed72176f341c0fec0f69a0800e1bcb0403ba58b8ab1d40e3d54e4c9bc3",
+  "seed_parts": [
+    {
+      "path": "seed/0000.part",
+      "bytes": 50331648,
+      "sha256": "3745d2b9f3ef8caf6e8763a280d1f551b47c3a3cc9874a1cf6148a692a23d425"
+    },
+    {
+      "path": "seed/0001.part",
+      "bytes": 50331648,
+      "sha256": "726194b227d1754d35802cc02987f786662cf2ac1164429965c6c489c8eba142"
+    },
+    {
+      "path": "seed/0002.part",
+      "bytes": 19482633,
+      "sha256": "551ddbc3cd3ab6a84767002c9ac454ac4c84856559fafa000676b22831eef0d1"
+    }
+  ],
+  "freeze_sha256": "745b27f9b97408d44c712d741545b8503095cad310e2f4ebadd61ef464d463c5",
+  "snapshot_counts": {
+    "bars": 1955317,
+    "events": 0,
+    "accounts": 81,
+    "positions": 0,
+    "fills": 0,
+    "marks": 0
+  },
+  "source_commit": "9187830b9882cbc623906d5f4ed8d8dcdf8b8745",
+  "warmup_only": true
+}
