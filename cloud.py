@@ -73,8 +73,11 @@ def collect():
   except Exception:
    failed=True;raise
   finally:
-   c.commit();seq,parent=persist(obs,c,data,f,seq,parent);halt=ad.A.getkv(c,'integrity_halt',False) or ad.A.getkv(c,'stage')=='DISK_CAP_HALT';c.close()
-   if halt:run('gh','api','repos/fengoftian/spot-alert-settled-pilot/actions/workflows/collector.yml/disable','--method','PUT')
+   c.commit();halt=ad.A.getkv(c,'integrity_halt',False) or ad.A.getkv(c,'stage')=='DISK_CAP_HALT'
+   try:seq,parent=persist(obs,c,data,f,seq,parent)
+   finally:
+    c.close()
+    if halt:run('gh','api','repos/fengoftian/spot-alert-settled-pilot/actions/workflows/collector.yml/disable','--method','PUT')
   if ad.A.clock_ms()>=f['tail_end']:run('gh','api','repos/fengoftian/spot-alert-settled-pilot/actions/workflows/collector.yml/disable','--method','PUT')
   elif not failed:run('gh','workflow','run','collector.yml','--repo','fengoftian/spot-alert-settled-pilot','--ref','main','-f','mode=collect')
 if __name__=='__main__':collect()

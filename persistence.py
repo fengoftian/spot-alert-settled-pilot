@@ -16,8 +16,8 @@ def push(root,branch,attempts=3):
    if remote and remote[0]==local:return  # ambiguous delivery succeeded
    if remote:
     git(root,'fetch','--depth=1','origin',branch)
-    parent=git(root,'rev-parse','HEAD^')
-    if remote[0]!=parent:raise RuntimeError('Remote advanced unexpectedly; refuse overwrite') from ex
+    try:git(root,'merge-base','--is-ancestor',remote[0],local)
+    except RuntimeError:raise RuntimeError('Remote advanced unexpectedly; refuse overwrite') from ex
    if attempt+1<attempts:time.sleep([3,9][attempt])
  raise last
 def commit(root,message):

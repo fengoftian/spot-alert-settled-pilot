@@ -55,7 +55,7 @@ class AdapterTests(unittest.TestCase):
    if args==('rev-parse','HEAD'):return 'ours'
    if args[:1]==('push',):raise RuntimeError('remote commit_refs')
    if args[:1]==('ls-remote',):return 'intruder refs/heads/observations'
-   if args==('rev-parse','HEAD^'):return 'parent'
+   if args[:1]==('merge-base',):raise RuntimeError('not ancestor')
    return ''
   with patch.object(persistence,'git',side_effect=git),patch.object(persistence.time,'sleep'):
    with self.assertRaisesRegex(RuntimeError,'advanced'):persistence.push(self.data,'observations')
@@ -84,4 +84,24 @@ class AdapterTests(unittest.TestCase):
   count,_=journal.restore(seed,manifest,self.data/'deltas',self.data/'cold.sqlite');cold=sqlite3.connect(self.data/'cold.sqlite');self.assertEqual(count,2);self.assertEqual(cold.execute('SELECT COUNT(*) FROM pending').fetchone()[0],0);self.assertEqual(cold.execute('SELECT available FROM admissions').fetchone()[0],135000);cold.close()
  def test_runtime_capacity_is_combined_original_capacity_with_reserve(self):
   old=[json.loads((R/'vendor'/x).read_text())['disk_limit_bytes'] for x in ['a_config.json','b_config.json']];self.assertEqual(ad.CFG['disk_limit_bytes'],sum(old))
+
+ def test_remote_ancestor_allows_retry_of_multiple_unpublished_commits(self):
+  n={'push':0}
+  def git(root,*args):
+   if args==('rev-parse','HEAD'):return 'ours'
+   if args[:1]==('push',):
+    n['push']+=1
+    if n['push']==1:raise RuntimeError('commit_refs')
+    return ''
+   if args[:1]==('ls-remote',):return 'older-valid-ancestor refs/heads/observations'
+   return ''
+  with patch.object(persistence,'git',side_effect=git),patch.object(persistence.time,'sleep'):persistence.push(self.data,'observations')
+  self.assertEqual(n['push'],2)
+ def test_halt_disables_retry_even_if_last_checkpoint_push_fails(self):
+  import bootstrap,contextlib
+  obs=self.data/'obs';obs.mkdir();(obs/'SEED.json').write_text(json.dumps({'freeze_sha256':'freeze'}));source=self.data/'source';source.mkdir();(source/'FREEZE.json').write_text('{}');(source/'COHORT.json').write_text('{}');ad.A.setkv(self.c,'integrity_halt',True);self.c.commit()
+  with patch.object(bootstrap,'guard'),patch.object(cloud,'R',source),patch.object(cloud,'freeze',return_value={'tail_end':10**15}),patch.object(cloud,'checkout',return_value=obs),patch.object(cloud,'sha',return_value='freeze'),patch.object(cloud.journal,'materialized_seed',return_value=contextlib.nullcontext('seed')),patch.object(cloud.journal,'restore',return_value=(0,'parent')),patch.object(bootstrap,'runtime',return_value=self.c),patch.object(cloud.shutil,'copyfile'),patch.object(cloud,'persist',side_effect=RuntimeError('push failed')),patch.object(cloud,'run') as cmd:
+   with self.assertRaisesRegex(RuntimeError,'push failed'):cloud.collect()
+   self.assertIn('/disable',cmd.call_args.args[2])
+  self.c=ad.setup(self.data)
 if __name__=='__main__':unittest.main()
