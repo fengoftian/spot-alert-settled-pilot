@@ -25,7 +25,7 @@ def qualification(phase):
     for s,(raw,rec) in book.items():
      row=c.execute('SELECT t,available FROM admissions WHERE symbol=? ORDER BY t DESC LIMIT 1',(s,)).fetchone()
      if row and row['available']<=rec['received']<=row['t']+240000:seen.add(s)
-    ad.A.setkv(c,'q_book_symbols',sorted(seen));ad.A.setkv(c,'q_book_index',index+3);next_books=time.monotonic()+60
+    ad.A.setkv(c,'q_book_symbols',sorted(seen));ad.A.setkv(c,'q_book_index',index+3);next_books=began+60
    ad.A.setkv(c,'q_captures',ad.A.getkv(c,'q_captures',0)+1);c.commit();time.sleep(max(0,ad.POLICY['poll_seconds']-(time.monotonic()-began)))
   assert c.execute('SELECT COUNT(*) FROM accounts').fetchone()[0]==0
   integrity=c.execute('PRAGMA integrity_check').fetchone()[0];counts={s:c.execute('SELECT COUNT(*) FROM admissions WHERE symbol=?',(s,)).fetchone()[0] for s in cohort['collected_symbols']};seen=ad.A.getkv(c,'q_book_symbols',[]);c.commit();c.close()

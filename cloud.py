@@ -65,7 +65,7 @@ def collect():
     if sum(p.stat().st_size for p in data.rglob('*') if p.is_file())>ad.CFG['disk_limit_bytes'] or shutil.disk_usage(data).free<3*1024**3:
      ad.A.setkv(c,'stage','DISK_CAP_HALT');ad.A.issue(c,'DISK_CAP','Runtime cap reached; no relaxation');c.commit();raise ad.IntegrityError('Disk cap')
     ad.capture(c,data,cohort)
-    if time.monotonic()>=decision:ad.process(c,data,cohort,f);decision=time.monotonic()+ad.POLICY['decision_seconds']
+    if time.monotonic()>=decision:ad.process(c,data,cohort,f);decision=began+ad.POLICY['decision_seconds']
     if time.monotonic()-checkpoint>=ad.POLICY['checkpoint_seconds']:seq,parent=persist(obs,c,data,f,seq,parent);checkpoint=time.monotonic()
     time.sleep(max(0,ad.POLICY['poll_seconds']-(time.monotonic()-began)))
    if ad.A.clock_ms()>=f['tail_end']:
