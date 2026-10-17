@@ -1,0 +1,17 @@
+{
+  "minimum_age_ms": 60000,
+  "stable_separation_ms": 15000,
+  "both_observations_after_minimum_age": true,
+  "poll_seconds": 15,
+  "decision_seconds": 60,
+  "qualification_phase_seconds": 480,
+  "qualification_minimum_admissions_per_symbol": 8,
+  "bootstrap_old_minutes": 5,
+  "warmup_max_observations": 3,
+  "retention_days": 32,
+  "checkpoint_seconds": 180,
+  "lease_seconds": 19800,
+  "post_admission_revision": "INTEGRITY_HALT_NO_REWRITE",
+  "late_books": "REJECT_OR_LEAVE_EXIT_UNRESOLVED",
+  "outcome_inspection": "FIXED_END_ONLY"
+}

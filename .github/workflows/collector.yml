@@ -1,0 +1,57 @@
+name: Settled data prospective comparison
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        options: [launch, collect]
+        default: collect
+        required: true
+  schedule:
+    - cron: '43 */2 * * *'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: settled-study-single-writer
+  cancel-in-progress: false
+jobs:
+  qualification_first:
+    if: github.event_name == 'workflow_dispatch' && inputs.mode == 'launch'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - run: python3 run_tests.py
+      - run: python3 bootstrap.py 1
+        env:
+          GH_TOKEN: ${{ github.token }}
+  qualification_cold_resume:
+    needs: qualification_first
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - run: python3 run_tests.py
+      - run: python3 bootstrap.py 2
+        env:
+          GH_TOKEN: ${{ github.token }}
+  fresh_warmup_and_future_freeze:
+    needs: qualification_cold_resume
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - run: python3 run_tests.py
+      - run: python3 bootstrap.py prepare
+        env:
+          GH_TOKEN: ${{ github.token }}
+  collect:
+    if: vars.COLLECT_ENABLED == 'true' && (github.event_name == 'schedule' || inputs.mode == 'collect')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - run: python3 cloud.py
+        env:
+          GH_TOKEN: ${{ github.token }}

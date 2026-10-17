@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "scope": "Original engine and B suites plus corrected-data regression/persistence tests; no edge claim",
+  "hashes": {
+    "adapter.py": "b1edede16c174c4dc95bfe6bd1abc3fa56b014718a8bdc327d020c1154a5aae2",
+    "bootstrap.py": "a5cd409d1c7b3fc00e2bc8f4d6918d76f5220e7b349ced0c0bcef8f9fcaba22c",
+    "cloud.py": "0bb2dd6132d84ec3a3559672fc02039947f03104f0bfb04aea1bb7acc4480279",
+    "persistence.py": "b5942706cca7737aac08b36c0b4b149883c2bcb1ee48a9be7e77847af8f8ae26",
+    "journal.py": "463764f9aaf4efe5b5808e95c66323f1c5adc02b9b89cc5906b00226ccb0e160",
+    "config.json": "5a5b12ad8d8f0b71b759935cc881507bde6e8378d2cdadf80ff30d739b401d0f",
+    "ADMISSION_POLICY.json": "32104565e6a104f8842f1159539335ee2af33a8ea46f74621fcf55ff6af770ce",
+    "run_tests.py": "092987376c78814ed8bca3f6db405b91faa8b23dcf32a3ba07e82209d9cb179c"
+  }
+}
