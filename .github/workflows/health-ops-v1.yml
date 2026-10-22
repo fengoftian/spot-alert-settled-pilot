@@ -1,0 +1,20 @@
+name: Settled health storage operations v1
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '11,26,41,56 * * * *'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: settled-independent-health
+  cancel-in-progress: false
+jobs:
+  health:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - run: python3 ops/storage-v1/observe.py
+        env:
+          GH_TOKEN: ${{ github.token }}

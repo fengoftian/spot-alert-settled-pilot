@@ -1,0 +1,16 @@
+{
+  "schema": "storage-operations-v1",
+  "authority": "Owner-authorized engineering correction; 22 October 2026",
+  "scientific_source": "9187830b9882cbc623906d5f4ed8d8dcdf8b8745",
+  "freeze_sha256": "745b27f9b97408d44c712d741545b8503095cad310e2f4ebadd61ef464d463c5",
+  "body_prefix": "raw/sharded-v1/bodies",
+  "hashes": {
+    ".github/workflows/collector-ops-v1.yml": "c45f461b6bea724151ffddb65ea33115600a8dc12815c396e69405f4dce7cb40",
+    ".github/workflows/health-ops-v1.yml": "54f719e7d10d5cd3b03800fa52f72ade80c23f8e3230c7efc065f9c38b5e4368",
+    "ops/storage-v1/README.md": "1f427c77d5c79ec9161f51e9c0e516a1890fe2767cad3f2d7ec608207242ce20",
+    "ops/storage-v1/collect.py": "b14e1bb481c97595a91e13d660360085f031d208e9c99c0a4667554140ce5cf5",
+    "ops/storage-v1/io_adapter.py": "0c896e4e660c112ccd059ffd49e0244a24481f4e8841bdd96adcb09925da9029",
+    "ops/storage-v1/observe.py": "608504721a0cb74031867365fa17a9105a4bfc9f6581dfbe4eb9b1259408be11",
+    "ops/storage-v1/tests.py": "1fd61b26092c104efb245122e96d4d7013dbbb4423f2b626735e80349cd3e5fa"
+  }
+}

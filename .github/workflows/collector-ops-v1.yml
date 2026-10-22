@@ -1,0 +1,22 @@
+name: Settled collector storage operations v1
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '43 */2 * * *'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: settled-study-single-writer
+  cancel-in-progress: false
+jobs:
+  collect:
+    if: vars.OPS_COLLECT_ENABLED == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - run: python3 -B ops/storage-v1/tests.py
+      - run: python3 ops/storage-v1/collect.py
+        env:
+          GH_TOKEN: ${{ github.token }}
