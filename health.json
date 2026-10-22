@@ -1,15 +1,9 @@
 {
-  "checked_utc": "2026-10-21T22:29:36.161157+00:00",
+  "checked_utc": "2026-10-22T00:51:58.174585+00:00",
   "problems": [
-    "STALE",
-    "PRODUCER_FAILED"
+    "UNAVAILABLE"
   ],
-  "observations_commit": "14969e6d4e83bb1408bf45f62335c1938ae45de3",
-  "source_commit": "9187830b9882cbc623906d5f4ed8d8dcdf8b8745",
-  "run_id": "39561928763",
-  "receipt_symbols": 44,
-  "tick_age_seconds": 35432.8,
-  "tail_end": 1794837600000,
-  "unavailable_checks": 0,
-  "incident": "COLLECTION"
+  "detail": "",
+  "unavailable_checks": 1,
+  "incident": null
 }
