@@ -64,10 +64,14 @@ class StorageTests(unittest.TestCase):
     def test_successors_and_halt_disable_use_same_operations_writer(self):
         calls = []
         run = io.routed_run(lambda *a, **k: calls.append((a, k)))
-        run('gh', 'workflow', 'run', 'collector.yml', '--repo', persistence.REPO)
+        run('gh', 'workflow', 'run', 'collector.yml', '--repo', persistence.REPO, '--ref', 'main', '-f', 'mode=collect')
         run('gh', 'api', 'repos/' + persistence.REPO + '/actions/workflows/collector.yml/disable', '--method', 'PUT')
         run('git', 'push', 'origin', 'HEAD:observations')
         self.assertEqual(calls[0][0][3], io.COLLECTOR_WORKFLOW)
+        self.assertEqual(calls[0][0][-2:], ('-f', 'mode=collect'))
+        workflow = (ROOT / '.github/workflows' / io.COLLECTOR_WORKFLOW).read_text()
+        self.assertIn('options: [collect]', workflow)
+        self.assertIn('default: collect', workflow)
         self.assertIn('/' + io.COLLECTOR_WORKFLOW + '/disable', calls[1][0][2])
         self.assertEqual(calls[2][0], ('git', 'push', 'origin', 'HEAD:observations'))
 

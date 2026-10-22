@@ -1,6 +1,12 @@
 name: Settled collector storage operations v1
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        type: choice
+        options: [collect]
+        default: collect
+        required: true
   schedule:
     - cron: '43 */2 * * *'
 permissions:
