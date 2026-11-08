@@ -1,0 +1,9 @@
+# Publication operations v1
+
+Owner-authorized on 9 November 2026 NZDT after explicit approval of hosted qualification and deployment. Same frozen settled study, window, seed, accounts and scientific source. The original 26 scientific files, seven storage-operations files and storage identity remain byte-identical.
+
+The original Git wrapper raises `subprocess.TimeoutExpired` after 180 seconds; that exception escaped its RuntimeError retry handler. This additive adapter catches both only around the push, checks whether the exact commit was accepted, and otherwise keeps the original ancestor check and maximum of three same-commit attempts with 3/9-second pauses. Remote-state checks that fail abort. No force push, rebase, longer timeout, resource-guard relaxation or invented collection is introduced. Missing books remain missing.
+
+Both `persistence.push` and the by-value `cloud.push` binding are installed. The original sharded body writer, sparse archive, data admission, collector loop, fixed deadline, risk, sizing and all account/exit formulas are reused. Successor and halt-disable routing targets collector-ops-v2.yml, retaining mode=collect. The observer preserves its incident deduplication and fixed tail, with health-ops-v2.yml routing and additional operations provenance.
+
+Collector and observer retain their existing single-writer concurrency groups and best-effort schedules on standard public ubuntu-24.04 runners. New PUB_COLLECT_ENABLED and PUB_HEALTH_ENABLED variables gate activation. All legacy collectors stay disabled. Qualification runs only tests and temporary local Git fixtures on a hosted runner: no parallel market collection, state reset, paid Actions artifact/cache usage or interim economics. Activation requires passed qualification for the executing commit and a single-writer handoff.

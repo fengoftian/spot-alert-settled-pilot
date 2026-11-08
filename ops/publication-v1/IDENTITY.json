@@ -1,0 +1,20 @@
+{
+  "schema": "publication-operations-v1",
+  "authority": "Explicit owner approval of hosted qualification and deployment, 9 November 2026 NZDT",
+  "predecessor_operations_source": "c4a082dd019f2b33b2030c1615333d7f874a23ac",
+  "storage_identity_sha256": "d8f2e00b3079b14f1ad0290747e0df62a73c23eaa3de7f87ed4768101fe7021a",
+  "scientific_source": "9187830b9882cbc623906d5f4ed8d8dcdf8b8745",
+  "freeze_sha256": "745b27f9b97408d44c712d741545b8503095cad310e2f4ebadd61ef464d463c5",
+  "hashes": {
+    "ops/publication-v1/README.md": "be70311e4279d90dbede01a9a118166c7ac71531831169709d8182229644062f",
+    "ops/publication-v1/collect.py": "d0bc4ef6559e7b1438d2a6fc392b7113f8589f4af95a13cf16240f5c9c013618",
+    "ops/publication-v1/observe.py": "1e843a8ffb20a4fe256bf381a95d63bc21a731986fd7948e2946d14ffe8169ab",
+    "ops/publication-v1/publication_identity.py": "860ff7fdc51bb7374702c44b8c1573b20d499577cf147c56246914231a6bcf0d",
+    "ops/publication-v1/push_adapter.py": "ef197dca6be45bb4aa23696e55307138d8df42b5333b490c816620c70e209cba",
+    "ops/publication-v1/test_push_adapter.py": "b52d69a2b6041e8b616db515be34882fed5c355e03ec1d511a45b11c707508f9",
+    "ops/publication-v1/tests.py": "dcb689aded51e76bdef9e9cbb6c2aba26a3cfae10365a331b0db599b520c2b49",
+    ".github/workflows/collector-ops-v2.yml": "f6eaaeeae65004bf160a5250c2ad15f3131b3c2a79d9fd9ef8befaf4f1d1cb32",
+    ".github/workflows/health-ops-v2.yml": "edb2238c5e00519f83c8583f3ab354590f1e4b4b25bb9176d06a6cc94b2c7c04",
+    ".github/workflows/qualify-publication-v1.yml": "d3c2cbb8658118c528ba72c7e9b29c381971dcffac0b89bc7d61b29e42fff95d"
+  }
+}

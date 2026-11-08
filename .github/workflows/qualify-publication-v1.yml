@@ -1,0 +1,20 @@
+name: Qualify settled publication operations v1
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'ops/publication-v1/**'
+      - '.github/workflows/collector-ops-v2.yml'
+      - '.github/workflows/health-ops-v2.yml'
+      - '.github/workflows/qualify-publication-v1.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qualify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - run: python3 -B ops/storage-v1/tests.py
+      - run: python3 -B ops/publication-v1/tests.py
