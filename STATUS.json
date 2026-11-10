@@ -1,279 +1,285 @@
 {
   "stage": "COLLECTING",
-  "last_capture": 1794324927428,
-  "last_tick": 1794324931875,
-  "last_raw": "raw/1794324927421-candles-d19dfbd0.json.gz",
+  "last_capture": 1794325250602,
+  "last_tick": 1794325254995,
+  "last_raw": "raw/1794325250599-candles-cb9b31a0.json.gz",
   "integrity_halt": false,
   "coverage": [
     {
       "symbol": "AAVEUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.594
+      "last": 1794325080000,
+      "close_age_seconds": 115.718
     },
     {
       "symbol": "ADAUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.598
+      "last": 1794325080000,
+      "close_age_seconds": 115.721
     },
     {
       "symbol": "ALGOUSDT",
-      "bars": 46077,
-      "last": 1794324720000,
-      "close_age_seconds": 152.601
+      "bars": 46078,
+      "last": 1794325080000,
+      "close_age_seconds": 115.725
     },
     {
       "symbol": "APTUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.605
+      "last": 1794325080000,
+      "close_age_seconds": 115.729
     },
     {
       "symbol": "ARBUSDT",
-      "bars": 46077,
-      "last": 1794324720000,
-      "close_age_seconds": 152.609
+      "bars": 46078,
+      "last": 1794325080000,
+      "close_age_seconds": 115.732
     },
     {
       "symbol": "ASTERUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.612
+      "last": 1794325080000,
+      "close_age_seconds": 115.736
     },
     {
       "symbol": "AVAXUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.616
+      "last": 1794325080000,
+      "close_age_seconds": 115.74
     },
     {
       "symbol": "BCHUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.619
+      "last": 1794325080000,
+      "close_age_seconds": 115.743
     },
     {
       "symbol": "BNBUSDT",
-      "bars": 46077,
-      "last": 1794324720000,
-      "close_age_seconds": 152.623
+      "bars": 46078,
+      "last": 1794325080000,
+      "close_age_seconds": 115.747
     },
     {
       "symbol": "BTCUSDT",
-      "bars": 46077,
-      "last": 1794324720000,
-      "close_age_seconds": 152.627
+      "bars": 46078,
+      "last": 1794325080000,
+      "close_age_seconds": 115.75
     },
     {
       "symbol": "DOGEUSDT",
-      "bars": 46077,
-      "last": 1794324720000,
-      "close_age_seconds": 152.63
+      "bars": 46078,
+      "last": 1794325080000,
+      "close_age_seconds": 115.754
     },
     {
       "symbol": "DOTUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.634
+      "last": 1794325080000,
+      "close_age_seconds": 115.758
     },
     {
       "symbol": "ENAUSDT",
-      "bars": 46077,
-      "last": 1794324720000,
-      "close_age_seconds": 152.638
+      "bars": 46078,
+      "last": 1794325080000,
+      "close_age_seconds": 115.761
     },
     {
       "symbol": "ETHUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.641
+      "last": 1794325080000,
+      "close_age_seconds": 115.765
     },
     {
       "symbol": "FETUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.645
+      "last": 1794325080000,
+      "close_age_seconds": 115.769
     },
     {
       "symbol": "FILUSDT",
-      "bars": 46077,
-      "last": 1794324720000,
-      "close_age_seconds": 152.648
+      "bars": 46078,
+      "last": 1794325080000,
+      "close_age_seconds": 115.772
     },
     {
       "symbol": "HBARUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.652
+      "last": 1794325080000,
+      "close_age_seconds": 115.776
     },
     {
       "symbol": "HYPEUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.656
+      "last": 1794325080000,
+      "close_age_seconds": 115.779
     },
     {
       "symbol": "INJUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.659
+      "last": 1794325080000,
+      "close_age_seconds": 115.783
     },
     {
       "symbol": "JUPUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.663
+      "last": 1794325080000,
+      "close_age_seconds": 115.787
     },
     {
       "symbol": "LINKUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.666
+      "last": 1794325080000,
+      "close_age_seconds": 115.79
     },
     {
       "symbol": "LTCUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.67
+      "last": 1794325080000,
+      "close_age_seconds": 115.794
     },
     {
       "symbol": "METUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.674
+      "last": 1794325080000,
+      "close_age_seconds": 115.797
     },
     {
       "symbol": "NEARUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.677
+      "last": 1794325080000,
+      "close_age_seconds": 115.801
     },
     {
       "symbol": "OGNUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.681
+      "last": 1794325080000,
+      "close_age_seconds": 115.805
     },
     {
       "symbol": "ONDOUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.684
+      "last": 1794325080000,
+      "close_age_seconds": 115.808
     },
     {
       "symbol": "PEPEUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.688
+      "last": 1794325080000,
+      "close_age_seconds": 115.812
     },
     {
       "symbol": "PUMPUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.692
+      "last": 1794325080000,
+      "close_age_seconds": 115.815
     },
     {
       "symbol": "QNTUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.695
+      "last": 1794325080000,
+      "close_age_seconds": 115.819
     },
     {
       "symbol": "RLCUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.699
+      "last": 1794325080000,
+      "close_age_seconds": 115.823
     },
     {
       "symbol": "SANDUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.703
+      "last": 1794325080000,
+      "close_age_seconds": 115.826
     },
     {
       "symbol": "SOLUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.706
+      "last": 1794325080000,
+      "close_age_seconds": 115.83
     },
     {
       "symbol": "STRKUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.71
+      "last": 1794325080000,
+      "close_age_seconds": 115.833
     },
     {
       "symbol": "SUIUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.713
+      "last": 1794325080000,
+      "close_age_seconds": 115.837
     },
     {
       "symbol": "TAOUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.717
+      "last": 1794325080000,
+      "close_age_seconds": 115.841
     },
     {
       "symbol": "TIAUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.721
+      "last": 1794325080000,
+      "close_age_seconds": 115.844
     },
     {
       "symbol": "TRXUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.724
+      "last": 1794325080000,
+      "close_age_seconds": 115.848
     },
     {
       "symbol": "UNIUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.728
+      "last": 1794325080000,
+      "close_age_seconds": 115.851
     },
     {
       "symbol": "WLDUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.732
+      "last": 1794325080000,
+      "close_age_seconds": 115.855
     },
     {
       "symbol": "WUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.735
+      "last": 1794325080000,
+      "close_age_seconds": 115.859
     },
     {
       "symbol": "XLMUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.739
+      "last": 1794325080000,
+      "close_age_seconds": 115.862
     },
     {
       "symbol": "XRPUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.742
+      "last": 1794325080000,
+      "close_age_seconds": 115.866
     },
     {
       "symbol": "ZECUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.746
+      "last": 1794325080000,
+      "close_age_seconds": 115.869
     },
     {
       "symbol": "ZROUSDT",
       "bars": 46078,
-      "last": 1794324780000,
-      "close_age_seconds": 92.75
+      "last": 1794325080000,
+      "close_age_seconds": 115.873
     }
   ],
-  "pending": 51,
+  "pending": 44,
   "accounts": 81,
   "positions": 9,
   "issues": [
+    {
+      "id": 278,
+      "ts": 1794325070623,
+      "kind": "COLLECTOR_DOWNTIME",
+      "detail": "138.748 seconds; missed books not recoverable"
+    },
     {
       "id": 277,
       "ts": 1794324747783,
@@ -339,12 +345,6 @@
       "ts": 1794321078764,
       "kind": "COLLECTOR_DOWNTIME",
       "detail": "132.011 seconds; missed books not recoverable"
-    },
-    {
-      "id": 266,
-      "ts": 1794320762580,
-      "kind": "COLLECTOR_DOWNTIME",
-      "detail": "167.402 seconds; missed books not recoverable"
     }
   ],
   "performance_evaluation": "DEFERRED_TO_FIXED_END",
