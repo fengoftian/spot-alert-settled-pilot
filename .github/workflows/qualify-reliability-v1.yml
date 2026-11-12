@@ -1,0 +1,15 @@
+name: Qualify settled reliability operations
+on:
+  push:
+    branches: [ops/reliability-v3]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qualify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - run: python3 -B ops/publication-v1/tests.py
+      - run: python3 -B ops/reliability-v1/tests.py
