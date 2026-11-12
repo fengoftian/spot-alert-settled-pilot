@@ -254,7 +254,7 @@ def observe():
     ledger, ledger_sha = ledger_read()
     marker = None
     if producer['status'] == 'completed' and producer.get('conclusion') == 'failure':
-        jobs = api(PREFIX + 'actions/runs/' + cloud['run_id'] + '/jobs')['jobs']
+        jobs = api(PREFIX + 'actions/runs/' + str(producer['id']) + '/jobs')['jobs']
         for job in jobs:
             if job['conclusion'] != 'failure':
                 continue

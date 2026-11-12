@@ -25,3 +25,8 @@ of coverage, whole-account return/drawdown, costs, deployment and limitations.
 Only standard public ubuntu-24.04 runners are used. No paid artifacts/cache,
 external service, exchange account or orders are introduced. GitHub event and
 runner latency remain best effort; historical collection gaps are permanent.
+
+Pre-activation correction, 13 November 2026 NZDT: when the newest failed run has
+not published a checkpoint, read that run's job log and validate its marker; do
+not reuse the older checkpoint producer's log. A mocked complete observer path
+verifies the exact log identity and one bounded dispatch without network access.
