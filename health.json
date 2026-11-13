@@ -1,18 +1,15 @@
 {
-  "checked_utc": "2026-11-12T23:55:29.005505+00:00",
-  "problems": [
-    "STALE",
-    "PRODUCER_FAILED"
-  ],
-  "observations_commit": "0f3fd649ded86aa2ecd8e31f48ccae39fe1e7865",
-  "source_commit": "d1f1749ea0e7678840ae2f138c2c33f5d7f90461",
-  "run_id": "43321315761",
+  "checked_utc": "2026-11-13T05:26:48.859719+00:00",
+  "problems": [],
+  "observations_commit": "80119ac946370c3ec5e7dc5889ef355fef14ca39",
+  "source_commit": "aafffb12e548f32face0579060c67a8dae421581",
+  "run_id": "43367111814",
   "receipt_symbols": 44,
-  "tick_age_seconds": 1299.871,
+  "tick_age_seconds": 603.46,
   "tail_end": 1794837600000,
   "unavailable_checks": 0,
-  "incident": "COLLECTION",
-  "reliability_identity_sha256": "4f26297196d65129330ecf89bf78bb86ca750966329afdd270ffd777188997e2",
+  "incident": null,
+  "reliability_identity_sha256": "052b50c1e0331e4d31c3cf635cc7e20c6ea98a6b4348c820ac7997343f6a656b",
   "operations_identity_sha256": "8d4ec50353e7e5cdbd5f3ac1e841a42af1e51bb7872a71497f0bd926da49a86d",
   "scientific_source": "9187830b9882cbc623906d5f4ed8d8dcdf8b8745",
   "ambiguous_push_timeout_reconciliation": true
