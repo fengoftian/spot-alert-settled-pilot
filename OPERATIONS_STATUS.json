@@ -9,5 +9,7 @@
   "scientific_formulas_changed": false,
   "ambiguous_push_timeout_reconciliation": true,
   "maximum_push_attempts": 3,
-  "git_command_timeout_seconds": 180
+  "git_command_timeout_seconds": 180,
+  "reliability_identity_sha256": "4f26297196d65129330ecf89bf78bb86ca750966329afdd270ffd777188997e2",
+  "event_driven_recovery": true
 }
