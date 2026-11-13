@@ -1,0 +1,28 @@
+name: Settled independent recovery watchdog v2
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: [Settled collector reliability operations v1]
+    types: [completed]
+  schedule:
+    - cron: '11,26,41,56 * * * *'
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: settled-independent-health
+  cancel-in-progress: false
+jobs:
+  health:
+    if: vars.RELIABILITY_HEALTH_V2_ENABLED == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - run: python3 -B ops/reliability-v2/runner.py observe
+        env:
+          GH_TOKEN: ${{ github.token }}
+          COLLECT_ENABLED: ${{ vars.COLLECT_ENABLED }}
+          OPS_COLLECT_ENABLED: ${{ vars.OPS_COLLECT_ENABLED }}
+          PUB_COLLECT_ENABLED: ${{ vars.PUB_COLLECT_ENABLED }}
+          RELIABILITY_COLLECT_ENABLED: ${{ vars.RELIABILITY_COLLECT_ENABLED }}
