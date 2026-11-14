@@ -1,14 +1,13 @@
 {
-  "checked_utc": "2026-11-14T14:30:20.283217+00:00",
+  "checked_utc": "2026-11-14T16:13:17.635657+00:00",
   "problems": [
-    "STALE",
     "PRODUCER_FAILED"
   ],
-  "observations_commit": "90609d784db36044660d973cd48a2311cc088ab0",
+  "observations_commit": "c7ce3fcf2f197e5d1c9064ffaa063e7919321acb",
   "source_commit": "ed48dc6434e32aa9910238784bd767b34afb1b1c",
-  "run_id": "43568875323",
+  "run_id": "43609559823",
   "receipt_symbols": 44,
-  "tick_age_seconds": 16292.161,
+  "tick_age_seconds": 856.143,
   "tail_end": 1794837600000,
   "unavailable_checks": 0,
   "incident": "COLLECTION",
