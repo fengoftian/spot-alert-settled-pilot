@@ -1,14 +1,17 @@
 {
-  "checked_utc": "2026-11-14T05:33:05.384675+00:00",
-  "problems": [],
-  "observations_commit": "76b1f363925ac7ad285f26360a159d562a0c1415",
+  "checked_utc": "2026-11-14T07:35:19.752909+00:00",
+  "problems": [
+    "STALE",
+    "PRODUCER_FAILED"
+  ],
+  "observations_commit": "98bee4f1455f168f680ecbc4778024f610f3a2f8",
   "source_commit": "ed48dc6434e32aa9910238784bd767b34afb1b1c",
-  "run_id": "43530071646",
+  "run_id": "43562043685",
   "receipt_symbols": 44,
-  "tick_age_seconds": 246.206,
+  "tick_age_seconds": 1438.807,
   "tail_end": 1794837600000,
   "unavailable_checks": 0,
-  "incident": null,
+  "incident": "COLLECTION",
   "reliability_identity_sha256": "052b50c1e0331e4d31c3cf635cc7e20c6ea98a6b4348c820ac7997343f6a656b",
   "operations_identity_sha256": "8d4ec50353e7e5cdbd5f3ac1e841a42af1e51bb7872a71497f0bd926da49a86d",
   "scientific_source": "9187830b9882cbc623906d5f4ed8d8dcdf8b8745",
